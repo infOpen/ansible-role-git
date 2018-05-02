@@ -1,0 +1,9 @@
+---
+
+- name: 'INSTALL | APT | Install git packages'
+  apt:
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('present') }}"
+    update_cache: True
+    cache_valid_time: "{{ git_repository_cache_valid_time }}"
+  with_items: "{{ git_packages }}"

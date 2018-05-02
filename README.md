@@ -40,6 +40,17 @@ $ tox
 ### Default role variables
 
 ``` yaml
+# Installation
+git_packages: "{{ _git_packages }}"
+git_repository_cache_valid_time: 3600
+git_repository_update_cache: True
+```
+
+### Debian OS family specific vars
+
+``` yaml
+_git_packages:
+  - name: 'git'
 ```
 
 ## Dependencies
