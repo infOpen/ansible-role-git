@@ -1,6 +1,10 @@
 # git
 
-[![Build Status](https://travis-ci.org/infOpen/ansible-role-git.svg?branch=master)](https://travis-ci.org/infOpen/ansible-role-git)
+[![Build Status](https://img.shields.io/travis/infOpen/ansible-role-git/master.svg?label=travis_master)](https://travis-ci.org/infOpen/ansible-role-git)
+[![Build Status](https://img.shields.io/travis/infOpen/ansible-role-git/develop.svg?label=travis_develop)](https://travis-ci.org/infOpen/ansible-role-git)
+[![Updates](https://pyup.io/repos/github/infOpen/ansible-role-git/shield.svg)](https://pyup.io/repos/github/infOpen/ansible-role-git/)
+[![Python 3](https://pyup.io/repos/github/infOpen/ansible-role-git/python-3-shield.svg)](https://pyup.io/repos/github/infOpen/ansible-role-git/)
+[![Ansible Role](https://img.shields.io/ansible/role/25429.svg)](https://galaxy.ansible.com/infOpen/git/)
 
 Install git package.
 
