@@ -1,0 +1,18 @@
+---
+
+# Main tasks file for git role
+
+- name: 'INIT | Manage variables to use for our target'
+  include: "{{ role_path }}/tasks/manage_variables.yml"
+  tags:
+    - 'role::git'
+    - 'role::git::init'
+    - 'role::git::install'
+
+
+- name: 'INSTALL | Manage OS family installation tasks'
+  become: True
+  include: "{{ role_path }}/tasks/install_{{ ansible_os_family | lower }}.yml"
+  tags:
+    - 'role::git'
+    - 'role::git::install'
