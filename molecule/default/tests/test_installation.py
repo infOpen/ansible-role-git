@@ -9,13 +9,9 @@ testinfra_hosts = AnsibleRunner(
     os.environ['MOLECULE_INVENTORY_FILE']).get_hosts('all')
 
 
-def test_hosts_file(host):
+def test_packages(host):
     """
-    Ensure /etc/hosts file exists
+    Ensure git package is installed
     """
 
-    f = host.file('/etc/hosts')
-
-    assert f.exists
-    assert f.user == 'root'
-    assert f.group == 'root'
+    assert host.package('git').is_installed
