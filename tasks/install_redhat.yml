@@ -1,0 +1,8 @@
+---
+
+- name: 'INSTALL | YUM | Install git packages'
+  become: True
+  yum:
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('present') }}"
+  with_items: "{{ git_packages }}"

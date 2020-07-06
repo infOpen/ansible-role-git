@@ -1,0 +1,6 @@
+---
+
+# RedHat OS family specific vars
+
+_git_packages:
+  - name: 'git'
